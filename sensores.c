@@ -58,7 +58,7 @@ void TestHwm(char *taskName){
 void TaskFlex(void *pvParameters){
   (void) pvParameters;
   int flexValue;
-  Serial.begin(115200);
+  Serial.begin(9600);
   connect_successful();
   while(1){
       flexValue = analogRead(pinFlex);
@@ -75,7 +75,7 @@ void TaskFlex(void *pvParameters){
 void TaskFlexSecond(void *pvParameters){
   (void) pvParameters;
   int flexValue2;
-  Serial.begin(115200);
+  Serial.begin(9600);
   connect_successful();
   while(1){
       flexValue2 = analogRead(pinFlexSecond);
