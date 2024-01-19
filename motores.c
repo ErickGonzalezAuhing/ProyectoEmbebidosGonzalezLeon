@@ -103,8 +103,9 @@ void loop() {
     Serial.print("Dato entero Flex 2 recibido: ");
     Serial.println(receivedFlex2);
   }
-  
+  // Servomotor 
   sensores();
+  // Motor DC
   motores();
   
 }
